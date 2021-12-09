@@ -5,7 +5,7 @@ Day | Challenge | Solution(s)
 1 | [Not Quite Lisp](https://adventofcode.com/2015/day/1) | [Haskell](https://github.com/rssbrrw/Advent-of-Code-2015/blob/main/01/1.hs)
 2 | [I Was Told There Would Be No Math](https://adventofcode.com/2015/day/2)| [Haskell](https://github.com/rssbrrw/Advent-of-Code-2015/blob/main/02/2.hs)
 3 | [Perfectly Spherical Houses in a Vacuum](https://adventofcode.com/2015/day/3)| [Haskell](https://github.com/rssbrrw/Advent-of-Code-2015/blob/main/03/3.hs)
-4 | | |
+4 | [The Ideal Stocking Stuffer](https://adventofcode.com/2015/day/4)| [Haskell](https://github.com/rssbrrw/Advent-of-Code-2015/blob/main/04/4.hs)
 5 | | |
 6 | | |
 7 | | |
