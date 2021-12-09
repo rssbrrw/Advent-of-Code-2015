@@ -1,7 +1,7 @@
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
 
 import Data.Bifunctor (bimap)
-import Data.Map
+import Data.Map as M
 
 import AOC
 
@@ -22,7 +22,7 @@ move ((x, y), m) direction =
 
 partOne :: String -> Int
 partOne input = do
-  sum $ Data.Map.map size $ snd $ Prelude.foldl move ((0, 0), initialState) input
+  sum $ M.map size $ snd $ Prelude.foldl move ((0, 0), initialState) input
 
 alternateChars :: String -> (String, String)
 alternateChars xs = bimap reverse reverse (Prelude.foldl addToShortest ("", "") xs)
@@ -33,5 +33,5 @@ partTwo input = do
   let (santaState, roboState) = (initialState, initialState)
   let (santaDirections, roboDirections) = alternateChars input
   let santaRoute = Prelude.foldl move ((0, 0), santaState) santaDirections
-  let roboRoute = snd $ Prelude.foldl move ((0, 0), snd santaRoute) roboDirections
-  sum $ Data.Map.map size roboRoute
+  let bothRoutes = snd $ Prelude.foldl move ((0, 0), snd santaRoute) roboDirections
+  sum $ M.map size bothRoutes
